@@ -4,14 +4,11 @@
 ```
 docker-compose up -d
 ```
-## Nginx
-- ブラウザへアクセスし、hello worldの確認
+## Nginxのリバースプロキシ
+localhost:8080へアクセスすると
+express.jsのメインページへアクセスする
 ```
 localhost:8080
-```
-## Nodejs(express)
-```
-http://localhost:3000/
 ```
 
 ## コンテナ作成参考記事
