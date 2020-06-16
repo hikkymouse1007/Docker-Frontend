@@ -1,18 +1,19 @@
 version: '3'
 services:
   web:
-    image: nginx
-    container_name: "st-nginx"
-    volumes:
-      - .:/usr/share/nginx/html
+    build:
+      context: ./docker/construct_web
+      dockerfile: Dockerfile-web
+    image: st-nginx
+    container_name: st-nginx
     ports:
-      - "8080:80"
+      - 8080:80
 
   app:
     build:
       context: ./docker/construct_app
       dockerfile: Dockerfile-app
-    image: nodejs
+    image: st-nodejs
     container_name: st-nodejs
     ports:
       - 3000:3000
