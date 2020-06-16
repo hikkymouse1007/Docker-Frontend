@@ -4,6 +4,16 @@
 ```
 docker-compose up -d
 ```
+
+- コンテナの停止
+```
+docker stop <CONTAINER IDまたはNAME>
+```
+
+- コンテナの削除
+```
+docker-compose down
+```
 ## Nginxのリバースプロキシ
 localhost:8080へアクセスすると
 express.jsのメインページへアクセスする
