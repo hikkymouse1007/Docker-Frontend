@@ -2,6 +2,7 @@ version: '3'
 services:
   web:
     image: nginx
+    container_name: "nginx"
     volumes:
       - .:/usr/share/nginx/html
     ports:
